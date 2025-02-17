@@ -7,8 +7,8 @@ from tqdm import tqdm
 
 def get_data() -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     # load the data
-    train_df = pd.read_csv('/Users/anshikamodi/Desktop/gjcds/data/mnist_train.csv')
-    test_df = pd.read_csv('/Users/anshikamodi/Desktop/gjcds/data/mnist_test.csv')
+    train_df = pd.read_csv('mnist_train.csv')
+    test_df = pd.read_csv('mnist_test.csv')
 
     X_train = train_df.drop('label', axis=1).values
     y_train = train_df['label'].values
